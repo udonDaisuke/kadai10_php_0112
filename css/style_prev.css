@@ -1,0 +1,41 @@
+body{
+    display: none;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+iframe{
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+.post_area{
+    width: 100%;
+    height: fit-content;
+    border: 1px dotted rgba(0, 0, 0, 0.453);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    background: rgb(255, 248, 197);
+}
+.post_area.head{
+    position: relative;
+    z-index: 10;
+    background: none;
+    background: rgb(160, 120, 60);
+    height: 4px;
+    margin-top: 0;
+
+}
+
+
+.post_subject{
+    font-weight: bold;
+
+}
+.post_subject::before{
+content: "◆";
+}
